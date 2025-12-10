@@ -39,7 +39,7 @@ sudo apt install -y build-essential cmake python3 python3-pip python3-venv nodej
 - `docs/`: Language Specification (`spec.md`).
 
 ## Features
-- **Language**: `let`, `func`, `if/else`, `for`, `print`, `println`.
+- **Language**: `let`, `func`, `if/else`, `for`, `print`, `println`, `input()`.
 - **Compiler**: 6-phase pipelined compiler producing native C++ -> Binary.
 - **Error Reporting**: Detailed file, line, and column tracking for syntax and semantic errors.
 - **IDE**: Modern dark theme, 3-pane layout (Code, Input, Output), Syntax Highlighting.
