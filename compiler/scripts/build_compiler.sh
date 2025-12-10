@@ -7,7 +7,12 @@ cd "$(dirname "$0")/.."
 mkdir -p build
 cd build
 if command -v cmake &> /dev/null; then
-    cmake ..
+    if ! cmake ..; then
+        echo "CMake configuration failed. Cleaning cache and retrying..."
+        rm -f CMakeCache.txt
+        rm -rf CMakeFiles
+        cmake ..
+    fi
     make
 else
     echo "CMake not found. Falling back to direct g++ compilation..."
