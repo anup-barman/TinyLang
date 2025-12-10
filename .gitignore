@@ -1,0 +1,53 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editors and IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Compiler / C++ build artifacts
+compiler/build/
+*.o
+*.obj
+*.out
+*.exe
+*.a
+*.so
+*.dylib
+*.dll
+compile_commands.json
+
+# Frontend / Node.js
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+
+# Server / Python
+**/__pycache__/
+**/*.py[cod]
+**/*$py.class
+server/.venv/
+server/venv/
+server/env/
+server/.env
+server/.pytest_cache/
+server/.coverage
+server/htmlcov/
+
+# Logs
+*.log
