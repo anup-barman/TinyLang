@@ -36,7 +36,7 @@ sudo apt install -y build-essential cmake python3 python3-pip python3-venv nodej
 - `compiler/`: C++ Compiler (Lexer, Parser, AST, Semantic, Optimizer, Codegen).
 - `server/`: Python FastAPI server to execute compiler locally.
 - `frontend/`: React + TypeScript + Monaco IDE.
-- `docs/`: Language Specification (`spec.md`).
+- `docs/`: Language Specification (`spec.md`) and Compiler Manual (`compiler_usage.md`).
 
 ## Features
 - **Language**: `let`, `func`, `if/else`, `for`, `print`, `println`, `input()`.
