@@ -17,9 +17,14 @@ std::string Codegen::generate(Program &prog) {
          "return s.substr(start, len); }\n";
   out << "int _tl_to_int(const std::string& s) { try { return std::stoi(s); } "
          "catch (...) { return 0; } }\n";
+  out << "int _tl_to_int(int i) { return i; }\n";
+  out << "int _tl_to_int(double d) { return (int)d; }\n";
+
   out << "double _tl_to_float(const std::string& s) { try { return "
          "std::stod(s); } "
-         "catch (...) { return 0.0; } }\n\n";
+         "catch (...) { return 0.0; } }\n";
+  out << "double _tl_to_float(int i) { return (double)i; }\n";
+  out << "double _tl_to_float(double d) { return d; }\n\n";
 
   // We need to declare all functions first (forward declarations)
   // But we will just emit everything in order and assume topological sort or
