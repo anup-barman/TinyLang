@@ -58,7 +58,7 @@ arg_list       ::= expr { "," expr } ;
 - **Bounds Checking**: On by default. Disable with `--no-bounds-check`.
 
 ## Built-in Functions
-- `input()`: Reads a line from stdin (returns String).
+- `input()`: Reads a token from stdin (returns String). Reads one whitespace-delimited word at a time.
 - `print(expr)`: Prints expression to stdout (no newline).
 - `println(expr)`: Prints expression to stdout with newline.
 - `len(string)`: Returns length of string (Int).

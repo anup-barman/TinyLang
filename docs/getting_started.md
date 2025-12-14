@@ -25,6 +25,9 @@ string user = input();
 println("Hello " + user);
 ```
 
+> **Note:** `input()` reads whitespace-separated tokens (words), not entire lines. If you type "John Doe", a single `input()` call will only read "John".
+
+
 ## 3. Arrays
 Arrays can help store lists of data.
 
